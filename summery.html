@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summery Events Handler</title>
+</head>
+
+<body>
+  <h1 id="title-header">Mouse Is Moving</h1>
+  <input type="text" id="mouse-hover">
+  <button id="make-button">Click Me : green</button>
+  <script>
+    document.getElementById('make-button').addEventListener('click', function () {
+      document.body.style.backgroundColor = 'green'
+    })
+
+    document.getElementById('mouse-hover').addEventListener('keyup', function () {
+      console.log("Button Clicked");
+    })
+
+    document.getElementById('title-header').addEventListener('mouseenter', function () {
+      console.log("Mouse Is Moving");
+    })
+  </script>
+</body>
+
+</html>
